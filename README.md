@@ -1,3 +1,40 @@
+📚 RAG-Based Document Chatbot
+
+A local Retrieval-Augmented Generation (RAG) chatbot that allows users to upload PDF documents and ask natural-language questions about their content.
+
+The chatbot processes the uploaded document, converts the content into vector embeddings, retrieves the most relevant information, and generates answers using a locally running LLM.
+
+📌 Project Overview
+
+This project implements a Retrieval-Augmented Generation (RAG) pipeline for document-based question answering.
+
+Users can upload a PDF through a Streamlit interface and ask questions related to the uploaded document.
+
+The system:
+
+Extracts text from the PDF
+Splits the document into smaller chunks
+Generates vector embeddings
+Stores the embeddings in ChromaDB
+Performs semantic similarity search
+Retrieves the most relevant document chunks
+Sends the retrieved context to Gemma 2B
+Generates an answer based only on the uploaded document
+
+The project runs locally using Ollama and does not require a paid API.
+
+✨ Features
+📄 Upload PDF documents
+🔍 Extract text from PDFs
+✂️ Split documents into smaller chunks
+🧠 Generate embeddings using Nomic Embed Text
+🗄️ Store embeddings using ChromaDB
+🔎 Perform semantic similarity search
+🤖 Generate answers using Gemma 2B
+💬 Interactive Streamlit chatbot interface
+🔒 Local processing using Ollama
+💰 No paid API required this is not there
+
 ## 🏗️ Architecture
 
 ```text
@@ -25,9 +62,8 @@ Generated Answer
 ---
 
 ## 🛠️ Technologies Used
-
 | Technology | Purpose |
-|------------|---------|
+|-----------|---------|
 | Python | Core programming language |
 | LangChain | RAG pipeline and document processing |
 | PyPDF | PDF text extraction |
@@ -36,7 +72,6 @@ Generated Answer
 | Ollama | Local model execution |
 | Gemma 2B | Local language model |
 | Streamlit | Web-based chatbot interface |
-
 ---
 
 ## 📁 Project Structure
@@ -201,12 +236,9 @@ You can ask questions such as:
 
 ---
 
-## 📸 Screenshots
+### 📸 Screenshots
 
-Add a screenshot of the Streamlit chatbot interface here.
-
-```markdown
-![RAG Chatbot](screenshots/chatbot.png)
+The Streamlit chatbot interface allows users to upload PDF documents and ask questions based on the document content.
 ```
 
 ---
