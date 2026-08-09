@@ -279,16 +279,3 @@ AI & ML Graduate
 
 This project is intended for educational and portfolio purposes.
 
-
----
-
-# Step 5 — Save the README
-
-After pasting everything:
-
-Press:
-
-```text
-Ctrl + S
-
-That's it.
